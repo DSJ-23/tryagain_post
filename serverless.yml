@@ -1,0 +1,16 @@
+
+
+service: trypost
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: us-east-1
+  role: "arn:aws:iam::799247459973:role/lambda-vpc-role"
+  timeout: 120
+
+functions:
+  hello:
+    handler: handler.hello
+
+
